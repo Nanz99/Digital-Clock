@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.clockContainer .clock__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  width: 100%;
+}
+
+.clockContainer .clock__content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 50px;
+}
+
+.clockContainer .clock__content .flex .number {
+  position: relative;
+  height: 290px;
+  width: 170px;
+  margin: 20px;
+}
+
+.clockContainer .clock__content .flex .number .square {
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-right-color: #aaa;
+  border-bottom-color: #aaa;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.clockContainer .clock__content .flex .number .square.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(2) {
+  top: 0;
+  left: 60px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(3) {
+  top: 0;
+  left: 120px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(4) {
+  top: 60px;
+  left: 0;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(5) {
+  top: 60px;
+  left: 120px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(6) {
+  top: 120px;
+  left: 0;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(7) {
+  top: 120px;
+  left: 60px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(8) {
+  top: 120px;
+  left: 120px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(9) {
+  top: 180px;
+  left: 0px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(10) {
+  top: 180px;
+  left: 120px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(11) {
+  top: 240px;
+  left: 0px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(12) {
+  top: 240px;
+  left: 60px;
+}
+
+.clockContainer .clock__content .flex .number .square:nth-of-type(13) {
+  top: 240px;
+  left: 120px;
+}
+
+.clockContainer .clock__content span {
+  font-size: 200px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
